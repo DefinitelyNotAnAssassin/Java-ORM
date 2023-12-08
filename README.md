@@ -1,10 +1,10 @@
-
-
 <br>
+<br>
+
 # Java-ORM 
 
 
-## This repository provides a Database.java to connect to databse, execute SQL statements, and other interaction with the SQLITE3 Database using the JDBC Sqlite Driver. 
+#### This repository provides a Database.java to connect to databse, execute SQL statements, and other interaction with the SQLITE3 Database using the JDBC Sqlite Driver. 
 
 
 
