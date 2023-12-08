@@ -15,7 +15,7 @@
 1. SQLITE JDBC Driver
 # 
 
-<br><br><br>
+<br><br>
 
 
 Database Class API Documentation
@@ -51,8 +51,8 @@ Establishes a connection to the specified SQLite database.
     database.connect("example_database.db");
     
 
-\---
-
+---
+<br><br>
 #### `executeStatement(String sql)`
 
 Executes a SQL statement that does not return a result set.
@@ -68,8 +68,8 @@ Executes a SQL statement that does not return a result set.
     database.executeStatement("CREATE TABLE IF NOT EXISTS students (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)");
     
 
-\---
-
+---
+<br><br>
 #### `executeSearch(String sql) : ResultSet`
 
 Executes a SQL query and returns a `ResultSet` containing the result.
@@ -89,8 +89,8 @@ Executes a SQL query and returns a `ResultSet` containing the result.
     ResultSet result = database.executeSearch("SELECT * FROM students");
     
 
-\---
-
+---
+<br><br>
 #### `loopThroughResultSet(ResultSet resultSet)`
 
 Prints the content of a `ResultSet` by looping through its rows and columns.
@@ -107,8 +107,8 @@ Prints the content of a `ResultSet` by looping through its rows and columns.
     database.loopThroughResultSet(result);
     
 
-\---
-
+---
+<br><br>
 #### `replaceWildcards(String query, String... keyValues) : String`
 
 Replaces wildcard placeholders in a query with specified values.
@@ -129,8 +129,8 @@ Replaces wildcard placeholders in a query with specified values.
     String replacedQuery = database.replaceWildcards(query, "{name}", "John", "{age}", "25");
     
 
-\---
-
+---
+<br><br><br>
 ### Usage Example
 
     public class ExampleUsage {
