@@ -1,3 +1,6 @@
+
+
+<br>
 # Java-ORM 
 
 
@@ -8,7 +11,7 @@
 
 
 
-<br><br><br>
+<br>
 
 # Requirements 
 
@@ -21,11 +24,6 @@
 Database Class API Documentation
 ================================
 
-Package
--------
-
-    package com.example; // Change this to your current package
-    
 
 Class: Database
 ---------------
@@ -50,9 +48,9 @@ Establishes a connection to the specified SQLite database.
     Database database = new Database();
     database.connect("example_database.db");
     
+<br>
+<hr>
 
----
-<br><br>
 #### `executeStatement(String sql)`
 
 Executes a SQL statement that does not return a result set.
@@ -67,9 +65,9 @@ Executes a SQL statement that does not return a result set.
     database.connect("example_database.db");
     database.executeStatement("CREATE TABLE IF NOT EXISTS students (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)");
     
+<br>
+<hr />
 
----
-<br><br>
 #### `executeSearch(String sql) : ResultSet`
 
 Executes a SQL query and returns a `ResultSet` containing the result.
@@ -88,9 +86,9 @@ Executes a SQL query and returns a `ResultSet` containing the result.
     database.connect("example_database.db");
     ResultSet result = database.executeSearch("SELECT * FROM students");
     
+<br>
+<hr>
 
----
-<br><br>
 #### `loopThroughResultSet(ResultSet resultSet)`
 
 Prints the content of a `ResultSet` by looping through its rows and columns.
@@ -106,9 +104,9 @@ Prints the content of a `ResultSet` by looping through its rows and columns.
     ResultSet result = database.executeSearch("SELECT * FROM students");
     database.loopThroughResultSet(result);
     
-
+<br>
 ---
-<br><br>
+
 #### `replaceWildcards(String query, String... keyValues) : String`
 
 Replaces wildcard placeholders in a query with specified values.
@@ -129,8 +127,9 @@ Replaces wildcard placeholders in a query with specified values.
     String replacedQuery = database.replaceWildcards(query, "{name}", "John", "{age}", "25");
     
 
----
-<br><br><br>
+<br><br>
+<hr>
+
 ### Usage Example
 
     public class ExampleUsage {
